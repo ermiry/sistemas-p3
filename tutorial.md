@@ -25,3 +25,16 @@ wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.6.9.tar.xz
 
 
 ![Download version](images/wget.jpeg)
+
+2. Extract tar.xz file
+
+
+unxz -v linux-5.6.9.tar.xz
+
+
+![Unpack](images/unpack.jpeg)
+
+3. Untar the kernel tarball. You can extract the source code in your $HOME directory or any other directory using the following unzx command or xz command:
+
+
+tar xvf linux-5.6.9.tar
