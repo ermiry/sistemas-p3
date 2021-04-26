@@ -38,3 +38,11 @@ unxz -v linux-5.6.9.tar.xz
 
 
 tar xvf linux-5.6.9.tar
+
+4. Install the required compilers and other tools. You must have development tools such as GCC compilers and related tools installed to compile the Linux kernel.
+
+
+sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev libncurses-dev
+
+
+![Dependencies](images/dependencies.jpeg)
