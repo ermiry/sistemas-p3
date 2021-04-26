@@ -46,3 +46,14 @@ sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf
 
 
 ![Dependencies](images/dependencies.jpeg)
+
+5. Configure the Linux kernel features and modules
+
+5.1 Before start building the kernel, one must configure Linux kernel features. You must also specify which kernel modules (drivers) needed for your system. The task can be overwhelming for a new user. I suggest that you copy existing config file using the cp command:
+
+
+cd linux-5.6.9
+cp -v /boot/config-$(uname -r) .config
+
+
+![Base Config](images/base-config.jpeg)
