@@ -57,3 +57,31 @@ cp -v /boot/config-$(uname -r) .config
 
 
 ![Base Config](images/base-config.jpeg)
+
+6. Compile and build Linux kernel
+
+
+make -j $(nproc)
+
+
+![Compile Kernel](images/compile.jpeg)
+
+7. Install Linux kernel and modules (drivers)
+
+7.1 Install the Linux kernel modules
+
+
+sudo make modules_install
+
+
+7.2 Install the Linux kernel. So far we have compiled the Linux kernel and installed kernel modules. It is time to install the kernel itself:
+
+
+sudo make install
+
+
+It will install three files into /boot directory as well as modification to your kernel grub configuration file:
+
+- initramfs-5.6.9.img
+- System.map-5.6.9
+- vmlinuz-5.6.9
